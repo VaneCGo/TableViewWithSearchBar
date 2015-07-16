@@ -7,12 +7,10 @@
 //
 
 import UIKit
-import Foundation
-
 
 class TVSBTableViewResult: UITableViewController {
-    private var filteredProducts: [String] = [String]()
-    private let kCellIdentifier: String = "cell"
+    private var filteredProducts = [String]()
+    private let kCellIdentifier = "cell"
 
     override func viewDidLoad() {
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: kCellIdentifier)
@@ -33,9 +31,9 @@ class TVSBTableViewResult: UITableViewController {
 
 class TVSBTableViewController: UITableViewController, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating {
 
-    private let dataModel: [String] = ["Hello", "Bye", "Meh", "Wowo", "Bored", "Borked", "Vanessa"]
-    private let kCellIdentifier: String = "cell"
-    internal var searchBarInNavController: Bool = false
+    private let dataModel = ["Hello", "Bye", "Meh", "Wowo", "Bored", "Borked", "Vanessa"]
+    private let kCellIdentifier = "cell"
+    internal var searchBarInNavController = false
 
     lazy var resultsTableController: TVSBTableViewResult = {
         let rResult = TVSBTableViewResult()

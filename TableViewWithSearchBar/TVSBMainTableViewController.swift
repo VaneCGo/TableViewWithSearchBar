@@ -6,12 +6,11 @@
 //  Copyright (c) 2015 VCG. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class TVSBMainTableViewController: UITableViewController {
-    private let mainContent: [String] = ["SearchBar in NavigationBar", "SearchBar in HeaderView"]
-    private let kCellIdentifier: String = "cell"
+    private let mainContent = ["SearchBar in NavigationBar", "SearchBar in HeaderView"]
+    private let kCellIdentifier  = "cell"
 
     override func viewDidLoad() {
         navigationItem.title = "SearchBar — Tutorial"
